@@ -3,22 +3,44 @@ body {
     -moz-appearance: none;
 	-webkit-appearance: none;
 	font-size: 13px;
+	color: dimgray;
+	font-family: Arial, sans-serif;
 }
 
 #search-content {
 	text-align: center;
 	padding-top: 7.8%;
+	width: 40%;
+	margin: 0 auto;
 }
 
 #search  {
-	width: 40%;
-	padding: 8px 0px 8px 30px;
-	/*padding-top: 1.55em;*/
-	margin-top: 2%;
+	font-size: 15px;
+	width: 100%;
+	padding: 12px 30px 12px 30px;
 	border-radius: 20px;
 	border-width: 1.5px;
 	border-color: #dfe1e5;
-	border-style: solid
+	border-style: solid;
+}
+
+#searchbar-wrapper {
+	margin-top: 4%;
+	position: relative;
+}
+
+#search-image {
+	fill: #999999;
+	position: absolute;
+	width: 20;
+	top: 11px;
+	left: 9px;
+}
+
+#apps-image {
+	fill: dimgray;
+	width: 25;
+	margin-top: -4px;
 }
 
 label {
@@ -40,21 +62,37 @@ label:before {
 }
 
 .search-button {
+	background-color: #efefef;
+	color: dimgray;
 	padding: 0.6em 1em 0.6em 1em;
-	margin-top: 2%;
+	margin-top: 5%;
 	margin-right: 1em;
 	border: none;
 	font-size: 14px;
 	border-radius: 5px;
 }
 
+.signin-button {
+	color: white;
+	background-color: #4d79ff;
+	padding: 0.6em 1em;
+	border: none;
+	font-size: 13px;
+	border-radius: 2px;
+	margin-top: -9px;
+}
+
 .nav-item {
 	list-style-type: none;
+	padding-right: 15px;
 }
 
 ul {
 	padding: 0;
-	/*margin: 0;*/
+}
+
+.header {
+	padding: 15px 15px 0 17px;
 }
 
 li {
@@ -66,9 +104,15 @@ li {
 }
 
 footer {
-	padding: 0;
+	font-size: 14px;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
+	background-color: #efefef;
+	border-top: 1px solid #e6e6e6;
+}
+
+footer ul {
+	padding: 0 15px 0 30px;
 }
